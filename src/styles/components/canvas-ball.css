@@ -1,0 +1,8 @@
+.canvas-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  opacity: 0.25;
+  z-index: -1;
+}

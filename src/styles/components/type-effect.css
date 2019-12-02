@@ -1,0 +1,61 @@
+.TypeEffect {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.TypeEffect .dialog-text {
+  font-family: Roboto-Mono;
+  font-size: 43px;
+  color: #98a0ff;
+  width: 80%;
+  text-align: center;
+}
+
+/* The Cursor */
+.TypeEffect .dialog-text::after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  background: #98a0ff;
+  width: 2px;
+  height: 2ex;
+  top: -0.7ex;
+  transform: translateY(50%);
+
+  animation: cursorAnim 0.25s linear 0s infinite normal;
+}
+.TypeEffect.complete .dialog-text::after {
+  animation: completeAnim 0.1s linear 0s 1 normal forwards;
+}
+
+@keyframes cursorAnim {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+}
+
+@keyframes completeAnim {
+  0% {
+    height: 2.5vw;
+  }
+  100% {
+    height: 0;
+  }
+}

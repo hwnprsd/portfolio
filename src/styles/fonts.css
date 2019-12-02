@@ -1,0 +1,42 @@
+/* Create all of the font-familys! */
+
+@font-face {
+  font-family: Baloo;
+  src: url('../fonts/Baloo-Regular.ttf');
+}
+@font-face {
+  font-family: Bungee;
+  src: url('../fonts/Bungee-Regular.ttf');
+}
+@font-face {
+  font-family: Cutive;
+  src: url('../fonts/CutiveMono-Regular.ttf');
+}
+@font-face {
+  font-family: Patua;
+  src: url('../fonts/PatuaOne-Regular.ttf');
+}
+@font-face {
+  font-family: Roboto-Mono;
+  src: url('../fonts/RobotoMono-Regular.ttf');
+}
+@font-face {
+  font-family: Roboto-Thin;
+  src: url('../fonts/Roboto-Thin.ttf');
+}
+@font-face {
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: Fredoka;
+  src: url('../fonts/FredokaOne-Regular.ttf');
+}
+@font-face {
+  font-family: Concert;
+  src: url('../fonts/ConcertOne-Regular.ttf');
+}
+@font-face {
+  font-family: ribbons;
+  src: url('../fonts/ribbons.ttf');
+}

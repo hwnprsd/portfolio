@@ -1,0 +1,95 @@
+.MyWork {
+  position: relative;
+  background: #61f4de;
+}
+
+.MyWork .content {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  max-width: 1750px;
+  padding-top: 50px;
+  padding-bottom: 5px;
+}
+
+/* The Title */
+.MyWork .title {
+  position: relative;
+  display: inline-block;
+  font-family: Bungee;
+  font-size: 56px;
+  color: white;
+  width: 350px;
+  border-radius: 3px;
+  z-index: 1;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.MyWork .title-ribbon {
+  position: absolute;
+  width: 175%;
+  height: 140%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-64%);
+  z-index: -1;
+  image-rendering: pixelated;
+
+  /* Animation Defaults */
+  opacity: 0;
+  transform: translateX(-50%) translateY(-64%) scale(0.5);
+  transition: 0.2s;
+}
+.MyWork .title.anim .title-ribbon {
+  transform: translateX(-50%) translateY(-64%) scale(1);
+  opacity: 1;
+}
+
+.MyWork .title .text {
+  /* Animation Defaults */
+  transform: scale(0.5);
+  opacity: 0;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+}
+.MyWork .title.anim .text {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* The Projects */
+.MyWork .project-container {
+  margin-top: 100px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .MyWork .title {
+    font-size: 7vw;
+    margin-bottom: 0px;
+  }
+  .MyWork .title-ribbon {
+    width: 80vw;
+    height: 15vw;
+  }
+  .MyWork .content {
+    width: 100%;
+  }
+  .MyWork .project-container {
+    margin-top: 20px;
+  }
+  .MyWork .description {
+    font-weight: 600;
+  }
+}
+@media (max-width: 500px) {
+  .MyWork .title {
+    font-size: 9vw;
+  }
+  .MyWork .title-ribbon {
+    width: 95vw;
+    height: 17vw;
+  }
+}

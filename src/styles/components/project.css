@@ -1,0 +1,258 @@
+.Project {
+  position: relative;
+  display: flex;
+  margin: 125px 0px;
+}
+.Project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* The Text */
+.Project .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 46%;
+}
+
+.Project .name {
+  position: relative;
+  font-family: Fredoka;
+  font-size: 45px;
+  color: white;
+  text-shadow: 1px 1px #8d61f4, 2px 2px #8d61f4, 3px 3px #8d61f4,
+    4px 4px #8d61f4;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+.Project .name::after {
+  content: '';
+  display: block;
+  width: 100%;
+
+  background: white;
+  margin-top: 5px;
+}
+
+.Project .name .ribbon {
+  position: absolute;
+  width: 380px;
+  height: 90%;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-60%);
+  z-index: -1;
+  image-rendering: pixelated;
+
+  /* Animation Defaults */
+  opacity: 0;
+  left: 50px;
+  transition: 0.4s;
+}
+.Project.anim .name .ribbon {
+  opacity: 1;
+  left: -15px;
+}
+
+.Project .name .text {
+  /* Animation Defaults */
+  position: relative;
+  left: 50px;
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.25s;
+}
+.Project.anim .name .text {
+  left: 0px;
+  opacity: 1;
+}
+
+.Project .description {
+  position: relative;
+  font-family: Roboto-Thin;
+  font-size: 16px;
+  color: #8d61f4;
+  background: white;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 7px 7px #8d61f4;
+  line-height: 20px;
+
+  /* Animation Defaults */
+  opacity: 0;
+  left: -35px;
+  transition: 0.325s;
+  transition-delay: 0.35s;
+}
+.Project.anim .description {
+  opacity: 1;
+  left: 0;
+}
+
+.Project .text-container .description a {
+  position: relative;
+  display: inline-block;
+  color: #8d61f4;
+  text-decoration: underline;
+  padding: 0px 5px;
+  font-style: italic;
+  transition: 0.1s;
+  z-index: 1;
+  background: RGBA(255, 255, 255, 0.1);
+}
+.Project .text-container .description a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  transform: translateX(-50%);
+  background: #737cd8;
+  z-index: -1;
+  transition: 0.1s;
+}
+.Project .text-container .description a:hover::after {
+  width: 101%;
+}
+
+.Project .link {
+  position: relative;
+  align-self: flex-end;
+  margin-top: 20px;
+  font-family: Roboto-Thin;
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+  padding: 0px 5px;
+  background: RGBA(255, 255, 255, 0.1);
+
+  /* Animation Defaults */
+  opacity: 0;
+  top: 15px;
+  transition: 0.35s;
+  transition-delay: 0.5s;
+}
+.Project .link::after {
+  content: '';
+  display: none !important;
+}
+.Project:nth-child(even) .link {
+  align-self: flex-start;
+}
+.Project.anim .link {
+  top: 0;
+  opacity: 1;
+}
+
+/* The Seperating Line */
+.Project .line {
+  position: relative;
+  background: white;
+  margin: 0px 4%;
+  width: 1px;
+  height: 450px;
+  opacity: 0.4;
+
+  /* Animation Defaults */
+  opacity: 0;
+  transition: 0.35s;
+  transition-delay: 0.65s;
+}
+.Project.anim .line {
+  opacity: 0.4;
+}
+
+/* The Images */
+.Project .image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 46%;
+}
+.Project .image-container img {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0px 0px 10px RGBA(50, 50, 50, 0.3);
+
+  /* Animation Defaults */
+  opacity: 0;
+  left: 25px;
+  transition: 0.4s;
+  transition-delay: 0.7s;
+}
+.Project.anim .image-container img {
+  opacity: 1;
+  left: 0px;
+}
+
+/* Media Queries */
+
+/* Make each side wider */
+@media (max-width: 1110px) {
+  .Project .text-container {
+    width: 50%;
+    margin-right: 15px;
+  }
+  .Project .image-container {
+    width: 50%;
+    margin-left: 15px;
+  }
+}
+
+/* Switch to a column layout */
+@media (max-width: 890px) {
+  .Project {
+    flex-direction: column;
+  }
+  .Project:nth-child(even) {
+    flex-direction: column;
+  }
+  .Project .line {
+    width: 90%;
+    height: 1px;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .Project .text-container,
+  .Project .image-container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* Widen the content closer to the edges of the screen */
+@media (max-width: 700px) {
+  .Project {
+    overflow-x: hidden;
+  }
+  .Project .text-container,
+  .Project .image-container {
+    width: 80%;
+  }
+  .Project .name {
+    font-size: 8vw;
+  }
+  .Project .name .ribbon {
+    top: 10%;
+    transform: none;
+    max-height: 50px;
+  }
+}
+
+/* Go even wider! */
+@media (max-width: 487px) {
+  .Project:first-child {
+    margin-top: 75px;
+  }
+  .Project .text-container,
+  .Project .image-container {
+    width: 90%;
+  }
+}

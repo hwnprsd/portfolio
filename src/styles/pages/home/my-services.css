@@ -1,0 +1,18 @@
+.MyServices {
+  width: 100%;
+  background: #61f4de;
+}
+.MyServices .content {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  max-width: 1750px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.MyServices .title {
+  font-family: Concert;
+  font-size: 45px;
+  color: white;
+}

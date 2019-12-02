@@ -1,0 +1,188 @@
+.MyDesign {
+  position: relative;
+  width: 100%;
+  background: #61f4de;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  z-index: 1;
+}
+
+/* The Content */
+.MyDesign .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1250px;
+  margin: auto;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.MyDesign .section-title {
+  font-family: Concert;
+  color: white;
+  font-size: 70px;
+  text-shadow: 1px 1px #8d61f4, 2px 2px #8d61f4, 3px 3px #8d61f4,
+    4px 4px #8d61f4, 5px 5px #8d61f4, 6px 6px #8d61f4, 7px 7px #8d61f4,
+    8px 8px #8d61f4, 9px 9px #8d61f4, 10px 10px #8d61f4, 11px 11px #8d61f4,
+    12px 12px #8d61f4, 13px 13px #8d61f4, 14px 14px #8d61f4, 15px 15px #8d61f4,
+    16px 16px #8d61f4, 17px 17px #8d61f4, 18px 18px #8d61f4;
+  margin-bottom: 35px;
+
+  /* Animation Default */
+  opacity: 0;
+}
+.MyDesign .section-sub-text {
+  font-family: roboto-thin;
+  font-size: 21px;
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 50px;
+
+  /* Animation Default */
+  opacity: 0;
+}
+
+.MyDesign .svg-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  top: 50%;
+  margin-bottom: 35px;
+
+  /* Animation Default */
+  opacity: 0;
+}
+.MyDesign .svg {
+  width: 80px;
+  margin: 0px 50px;
+}
+
+.MyDesign .line-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 2px;
+}
+.MyDesign .line-container .line {
+  width: 20px;
+  height: 2px;
+  background: white;
+  border-radius: 5px;
+  margin: 0px 50px;
+  margin-bottom: 100px;
+  position: relative;
+
+  /* Animation Default */
+  opacity: 0;
+}
+
+/* Animations */
+.MyDesign.anim .section-title {
+  animation-name: MyDesignFromBelow;
+  animation-duration: 0.5s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes MyDesignFromBelow {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.MyDesign.anim .section-sub-text {
+  animation-name: MyDesignFromBelow;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.MyDesign.anim .svg-container {
+  animation-name: MyDesignFadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes MyDesignFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.MyDesign.anim .line-container .line {
+  animation-name: growAnim;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.75s;
+}
+.MyDesign.anim .line-container .line:nth-child(1),
+.MyDesign.anim .line-container .line:nth-child(3) {
+  animation-delay: 1s;
+}
+@keyframes growAnim {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 20px;
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 642px) {
+  .MyDesign .section-title {
+    font-size: 64px;
+    margin-bottom: 50px;
+  }
+  .MyDesign .svg-container .svg {
+    width: 60px;
+    margin: 0px 40px;
+  }
+  .MyDesign .section-sub-text {
+    font-size: 21px;
+    width: 90%;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 548px) {
+  .MyDesign {
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+  .MyDesign .section-title {
+    font-size: 11vw;
+    text-shadow: 1px 1px #8d61f4, 2px 2px #8d61f4, 3px 3px #8d61f4,
+      4px 4px #8d61f4, 5px 5px #8d61f4, 6px 6px #8d61f4, 7px 7px #8d61f4,
+      8px 8px #8d61f4, 9px 9px #8d61f4, 10px 10px #8d61f4, 11px 11px #8d61f4;
+  }
+  .MyDesign .svg-container {
+    margin-bottom: 15px;
+  }
+  .MyDesign .svg-container .svg {
+    width: 50px;
+    margin: 0px 25px;
+  }
+  .MyDesign .section-sub-text {
+    font-size: 19px;
+    width: 90%;
+  }
+}
