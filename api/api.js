@@ -23,7 +23,7 @@ console.log(credentials);
 // setup e-mail data with unicode symbols
 var mailOptions = {
   from: '"Fred Foo ?" <foo@blurdybloop.com>', // sender address
-  to: 'contact@callgage.co', // list of receivers
+  to: 'ashwinxprasad@gmail.com', // list of receivers
   subject: 'MESSAGE FROM PORTFOLIO SITE!', // Subject line
   text: 'Hello world ?', // plaintext body
   html: '<b>Hello world ?</b>' // html body
