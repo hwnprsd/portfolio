@@ -21,7 +21,7 @@ class Message extends Component {
     return (
       <div className="Message hidden">
         <div className="text">
-          "contact@callgage.co" was copied to your clipboard!
+          "ashwinxprasad@gmail.com" was copied to your clipboard!
         </div>
       </div>
     );

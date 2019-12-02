@@ -9,43 +9,20 @@ class LinkMenu extends Component {
   render() {
     return (
       <div className="LinkMenu">
-        {/* The Contact Me Button */}
-        <div className="contact" onClick={this.props.openContactForm}>
-          <i className="fas fa-edit" />
-          <div className="text">Contact Me</div>
-        </div>
-
+       
         {/* Links to my different profiles */}
         <div className="link-container">
           {/* Github */}
           <a
             className="link"
-            href="https://github.com/quangogage"
+            href="https://github.com/d3fkon"
             target="_blank"
           >
             <i className="fab fa-github" />
             <div className="name">Github</div>
           </a>
 
-          {/* Stack Overflow */}
-          <a
-            className="link"
-            href="https://stackoverflow.com/users/8322279/gage-hendy-ya-boy?tab=profile"
-            target="_blank"
-          >
-            <i className="fab fa-stack-overflow" />
-            <div className="name">Stack Overflow</div>
-          </a>
-
-          {/* Codepen */}
-          <a
-            className="link"
-            href="https://codepen.io/quangogage/"
-            target="_blank"
-          >
-            <i className="fab fa-codepen" />
-            <div className="name">Codepen</div>
-          </a>
+         
         </div>
       </div>
     );

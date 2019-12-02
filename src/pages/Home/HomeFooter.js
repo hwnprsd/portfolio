@@ -7,37 +7,21 @@ class HomeFooter extends Component {
       <div className="HomeFooter">
         <div className="content">
           <div className="text-container">
-            <div>Website Created by Gage Henderson</div>
-            <div>gageprod@gmail.com</div>
+            <div>-</div>
+            <div>ashwinxprasad@gmail.com</div>
           </div>
           <div className="line" />
           <div className="link-container">
             {/* Github */}
             <a
               className="link"
-              href="https://github.com/quangogage"
+              href="https://github.com/d3fkon"
               target="_blank"
             >
               <i className="fab fa-github" />
             </a>
 
             {/* Stack Overflow */}
-            <a
-              className="link"
-              href="https://stackoverflow.com/users/8322279/gage-hendy-ya-boy?tab=profile"
-              target="_blank"
-            >
-              <i className="fab fa-stack-overflow" />
-            </a>
-
-            {/* Codepen */}
-            <a
-              className="link"
-              href="https://codepen.io/quangogage/"
-              target="_blank"
-            >
-              <i className="fab fa-codepen" />
-            </a>
           </div>
         </div>
       </div>

@@ -74,18 +74,18 @@ export default class MyTech extends Component {
             <div className="title" style={{color: "#8d61f4"}} >My Proficiencies</div>
             <div className="sub-text" style={{color: '#8D61F4'}}>
               I am constantly learning and improving my skills with a multitude
-              of web technologies, languages, and libraries. From wordpress to
-              react, the ones shown here I have become expertly capable with.
+              of technologies, languages, and libraries. From html to
+              flutter, the ones shown here I have become expertly capable with.
               <br />
               <br />
-              My front end skills span over <b>numerous</b> libraries that I
-              have worked with. My love for design is encouraged through my
-              ability to utilize these to the fullest.
+              I'm proficient in Web Technologies. However 
+              Mobile Application Development is where my true passion lies. 
+              I'm constantly exploring new horizons, while trying to perfect what I learn.
               <br />
               <br />
               On the back end, I consider myself professionally capable with all
-              of the technologies listed, but my true passion lies in the
-              visual, front end side of the web.
+              of the technologies listed. Also, I enjoy dev ops, managing processes and
+              being a part of agile teams.
             </div>
           </div>
 
@@ -93,28 +93,29 @@ export default class MyTech extends Component {
           {/* (Only shown on TOUCH devices) */}
 
           {true ? (
+            <div className="content">
             <div className="tech-list-container" style={{backgroundColor: 'white'}}>
-              <div className="tech-list">
-                <div className="title">Front End:</div>
+                <div className="tech-list">
+                <div className="title">Front End</div>
+                <div className="item">Flutter</div>
+                <div className="item">Android</div>
+                <div className="item">React</div>
+                <div className="item">React Native</div>
                 <div className="item">HTML</div>
                 <div className="item">CSS</div>
                 <div className="item">Javascript</div>
-                <div className="item">React</div>
-                <div className="item">React Native</div>
-                <div className="item">ThreeJS</div>
-                <div className="item">JQuery</div>
-                <div className="item">SCSS</div>
               </div>
               <div className="tech-list">
-                <div className="title">Back End</div>
-                <div className="item">Google Firebase</div>
-                <div className="item">PHP</div>
-                <div className="item">Paypal</div>
-                <div className="item">NodeJS</div>
+                <div className="title">Others</div>
                 <div className="item">ExpressJS</div>
                 <div className="item">Socket.io</div>
-                <div className="item">Wordpress</div>
+                <div className="item">Google Firebase</div>
+                <div className="item">PHP</div>
+                <div className="item">Python</div>
+                <div className="item">Keras</div>
+                <div className="item">Golang</div>
               </div>
+            </div>
             </div>
           ) : null}
 

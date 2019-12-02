@@ -30,8 +30,8 @@ class HomeHeader extends Component {
         <canvas className="canvas-1" />
         <div className="content">
           <div className="side left">
-            <div className="title">
-              Clean, beautiful websites made with <img src={heart} />
+            <div className="title" style={{fontSize: '45px'}}>
+              If you optimize everything, you will always be unhappy. <img src={heart} />
             </div>
           </div>
           <div className="divider" />
@@ -42,8 +42,7 @@ class HomeHeader extends Component {
               <div className="sub-text">
                 I'm a mobile developer and backend engineer, currently residing in Bangaluru, India.
                 <br />
-                <br />I create clean, modern, creative websites and interactive
-                web experiences.
+                <br />I create software that helps make life easier for everyone.
               </div>
             </div>
           </div>
