@@ -63,7 +63,7 @@ class ContactMe extends Component {
             </div>
             <div className="bar" />
             <div className="email" onClick={this.copyEmail.bind(this)}>
-              ashwinxprasad@gmail.com
+              mail@ashwinxprasad.xyz
             </div>
           </div>
         </div>
