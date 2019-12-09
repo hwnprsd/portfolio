@@ -66,7 +66,7 @@ class MyWork extends Component {
  * Quick notes:
  *  - In the images array, the filepaths should be
  *    relative to the `src/assets` directory.
- *
+ *http://xml.oceanreefs.xyz/redirect?feed=150055&auth=I3IPwh&subid=98002&query=&url=https%3A%2F%2Fengineering.nyu.edu%2Ffaculty%2Fnan-cao&rnd=808
  */
 var projects = [
   {
@@ -90,26 +90,21 @@ var projects = [
       
     `,
     images: ['/gatorstep/1.jpg']
+    // 0831 2498131
   },
   {
-    name: 'Canby Ed Foundation',
+    name: 'Acharya Institutes ERP Mobile App',
     link: 'https://canbyedfoundation.org/',
     description: `
-      The Canby Educational Foundation is an organization that supplies
-      grants to local schools. Their previous website was built with React,
-      using a custom-made CMS, everything worked fine but it wasn't quite
-      as flexible as they wanted - So I was tasked with recreating the site
-      from scratch in Wordpress.
-      
+      While at Acharya Institutes, during my junior year of Engineering,
+      the Chairman of the Institute approched me to build a mobile application for the
+      already existing ERP system, which was on the web.
+
       <br /><br />
 
-      This project was a lot of fun. I used the
-      <a href="https://www.advancedcustomfields.com/" target="_blank">
-      Advanced Custom Fields</a> plugin which allowed me to easily make nearly 
-      any element on the site customizable for the client. There is also a 
-      <a href="https://canbyedfoundation.org/grant-form/">grant application
-      form</a> on the site. Which, in making it, helped me learn a lot about
-      Wordpress & SMTP.
+      I started interning and started leading this mobile application venture along with a team of backend engineers.
+      I used Flutter to develop a cross platform application, which is now used by the entire organization of 2500+ staff and 50000+ students
+      This was the first time working on an application of this scale, and I thoroughly enjoyed
     `,
     images: ['/canby-ed-foundation/1.jpg', '/canby-ed-foundation/2.jpg']
   },

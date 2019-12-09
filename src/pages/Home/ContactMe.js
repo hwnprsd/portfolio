@@ -49,7 +49,7 @@ class ContactMe extends Component {
           <div className="title anim-on-scroll">Contact Me</div>
           <div className="line anim-on-scroll" />
           <div className="sub-text anim-on-scroll">
-            Want to hire me? Need some contract work? Just want to chat? You can
+            I'm always looking for interesting people to work with! You can
             contact me via email, or the form linked below.
           </div>
 

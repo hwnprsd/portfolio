@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 875px;
-  background: #61f4de;
+  background: #3A6EE8;
   z-index: 0;
 }
 
@@ -59,14 +59,13 @@
   align-self: flex-start;
   z-index: 2;
   border-radius: 10px;
-  border: 2px solid #8d61f4;
-  padding: 10px;
-  padding-bottom: 25px;
+  border: 2px solid #000000;
+  padding-top: 10px;
   pointer-events: none;
 
-  box-shadow: 1px 1px #8d61f4, 2px 2px #8d61f4, 3px 3px #8d61f4, 4px 4px #8d61f4,
-    5px 5px #8d61f4, 6px 6px #8d61f4, 7px 7px #8d61f4, 8px 8px #8d61f4,
-    9px 9px #8d61f4;
+  box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000, 4px 4px #000000,
+    5px 5px #000000, 6px 6px #000000, 7px 7px #000000, 8px 8px #000000,
+    9px 9px #000000;
 
   /* Animation Default */
   opacity: 0;
@@ -81,10 +80,10 @@
   display: flex;
   justify-content: space-around;
   width: 40%;
-  border: 2px solid #8d61f4;
-  box-shadow: 1px 1px #8d61f4, 2px 2px #8d61f4, 3px 3px #8d61f4, 4px 4px #8d61f4,
-    5px 5px #8d61f4, 6px 6px #8d61f4, 7px 7px #8d61f4, 8px 8px #8d61f4,
-    9px 9px #8d61f4;
+  border: 2px solid #000000;
+  box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000, 4px 4px #000000,
+    5px 5px #000000, 6px 6px #000000, 7px 7px #000000, 8px 8px #000000,
+    9px 9px #000000;
   border-radius: 10px;
   padding: 10px;
 }
@@ -97,9 +96,11 @@
 }
 .MyTech .item {
   font-family: Roboto-Thin;
-  font-size: 25px;
-  color: #8D61F4;
-  margin: 2.5px 0px;
+  font-size: 20px;
+  color: #000000;
+  margin: 5px 0px;
+  line-height: 130%;
+
 }
 .MyTech .item::before {
   content: '•';
@@ -112,16 +113,16 @@
   position: relative;
   font-family: Fredoka;
   font-size: 50px;
-  color: #8d61f4;
+  color: #000000;
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
   padding-bottom: 12px;
   text-align: center;
   margin-bottom: 20px;
-  text-shadow: 1px 1px #61f4de, 2px 2px #61f4de, 3px 3px #61f4de,
-    4px 4px #61f4de, 5px 5px #61f4de, 6px 6px #61f4de, 7px 7px #61f4de,
-    8px 8px #61f4de, 9px 9px #61f4de;
+  /* text-shadow: 1px 1px #3A6EE8, 2px 2px #3A6EE8, 3px 3px #3A6EE8,
+    4px 4px #3A6EE8, 5px 5px #3A6EE8, 6px 6px #3A6EE8, 7px 7px #3A6EE8,
+    8px 8px #3A6EE8, 9px 9px #3A6EE8; */
 }
 .MyTech .title::before {
   content: '';
@@ -137,9 +138,11 @@
   color: white;
   text-align: left;
   font-family: Roboto-Thin;
-  font-size: 18px;
-  width: 90%;
+  font-size: 20px;
   align-self: flex-start;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
 }
 
 /* Animations */
@@ -247,6 +250,7 @@
   }
   .MyTech .item {
     font-weight: 600;
+    line-height: 1.5;
   }
 }
 @media (max-width: 580px) {

@@ -21,8 +21,8 @@
   font-family: Fredoka;
   font-size: 45px;
   color: white;
-  text-shadow: 1px 1px #8d61f4, 2px 2px #8d61f4, 3px 3px #8d61f4,
-    4px 4px #8d61f4;
+  text-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000,
+    4px 4px #000000;
   margin-bottom: 15px;
   padding-bottom: 10px;
   z-index: 1;
@@ -73,11 +73,11 @@
   position: relative;
   font-family: Roboto-Thin;
   font-size: 16px;
-  color: #8d61f4;
+  color: #000000;
   background: white;
   padding: 25px;
   border-radius: 5px;
-  box-shadow: 7px 7px #8d61f4;
+  box-shadow: 7px 7px #000000;
   line-height: 20px;
 
   /* Animation Defaults */
@@ -94,7 +94,7 @@
 .Project .text-container .description a {
   position: relative;
   display: inline-block;
-  color: #8d61f4;
+  color: #000000;
   text-decoration: underline;
   padding: 0px 5px;
   font-style: italic;
@@ -111,7 +111,7 @@
   width: 0%;
   height: 100%;
   transform: translateX(-50%);
-  background: #737cd8;
+  background: #000000;
   z-index: -1;
   transition: 0.1s;
 }

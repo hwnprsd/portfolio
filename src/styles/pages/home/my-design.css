@@ -1,7 +1,7 @@
 .MyDesign {
   position: relative;
   width: 100%;
-  background: #61f4de;
+  background: #3A6EE8;
   padding-top: 100px;
   padding-bottom: 100px;
   z-index: 1;
@@ -26,22 +26,25 @@ canvas {
 
 .MyDesign .section-title {
   font-family: Concert;
-  color: white;
+  color: #ffffff;
   font-size: 70px;
-  text-shadow: 1px 1px #8d61f4, 2px 2px #8d61f4, 3px 3px #8d61f4,
-    4px 4px #8d61f4, 5px 5px #8d61f4, 6px 6px #8d61f4, 7px 7px #8d61f4,
-    8px 8px #8d61f4, 9px 9px #8d61f4, 10px 10px #8d61f4, 11px 11px #8d61f4,
-    12px 12px #8d61f4, 13px 13px #8d61f4, 14px 14px #8d61f4, 15px 15px #8d61f4,
-    16px 16px #8d61f4, 17px 17px #8d61f4, 18px 18px #8d61f4;
+  text-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000,
+    4px 4px #000000, 5px 5px #000000, 6px 6px #000000, 7px 7px #000000,
+    8px 8px #000000, 9px 9px #000000, 10px 10px #000000, 11px 11px #000000,
+    12px 12px #000000, 13px 13px #000000, 14px 14px #000000, 15px 15px #000000,
+    16px 16px #000000, 17px 17px #000000, 18px 18px #000000;
   margin-bottom: 35px;
 
   /* Animation Default */
   opacity: 0;
 }
 .MyDesign .section-sub-text {
-  font-family: roboto-thin;
+  font-family: roboto;
+  padding: 10px;
+  /* background-color: #ffffff; */
   font-size: 21px;
-  color: white;
+  color: #ffffff;
+  border-radius: 10px;
   text-align: center;
   width: 80%;
   margin-bottom: 50px;
@@ -75,7 +78,7 @@ canvas {
 .MyDesign .line-container .line {
   width: 20px;
   height: 2px;
-  background: white;
+  background: #ffffff;
   border-radius: 5px;
   margin: 0px 50px;
   margin-bottom: 100px;
@@ -170,9 +173,9 @@ canvas {
   }
   .MyDesign .section-title {
     font-size: 11vw;
-    text-shadow: 1px 1px #8d61f4, 2px 2px #8d61f4, 3px 3px #8d61f4,
-      4px 4px #8d61f4, 5px 5px #8d61f4, 6px 6px #8d61f4, 7px 7px #8d61f4,
-      8px 8px #8d61f4, 9px 9px #8d61f4, 10px 10px #8d61f4, 11px 11px #8d61f4;
+    text-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000,
+      4px 4px #000000, 5px 5px #000000, 6px 6px #000000, 7px 7px #000000,
+      8px 8px #000000, 9px 9px #000000, 10px 10px #000000, 11px 11px #000000;
   }
   .MyDesign .svg-container {
     margin-bottom: 15px;
