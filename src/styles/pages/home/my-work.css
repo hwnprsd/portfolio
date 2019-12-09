@@ -29,8 +29,8 @@
 
 .MyWork .title-ribbon {
   position: absolute;
-  width: 175%;
-  height: 140%;
+  width: 155%;
+  height: 100%;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-64%);

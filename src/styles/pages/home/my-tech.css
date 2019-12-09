@@ -62,11 +62,9 @@
   border: 2px solid #000000;
   padding-top: 10px;
   pointer-events: none;
-
-  box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000, 4px 4px #000000,
-    5px 5px #000000, 6px 6px #000000, 7px 7px #000000, 8px 8px #000000,
-    9px 9px #000000;
-
+  box-shadow: 1px 1px #e85d3a, 2px 2px #e85d3a, 3px 3px #e85d3a, 4px 4px #e85d3a,
+    5px 5px #e85d3a, 6px 6px #e85d3a, 7px 7px #e85d3a, 8px 8px #e85d3a,
+    9px 9px #e85d3a;
   /* Animation Default */
   opacity: 0;
 }
@@ -81,9 +79,9 @@
   justify-content: space-around;
   width: 40%;
   border: 2px solid #000000;
-  box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000, 4px 4px #000000,
-    5px 5px #000000, 6px 6px #000000, 7px 7px #000000, 8px 8px #000000,
-    9px 9px #000000;
+  box-shadow: 1px 1px #e85d3a, 2px 2px #e85d3a, 3px 3px #e85d3a, 4px 4px #e85d3a,
+    5px 5px #e85d3a, 6px 6px #e85d3a, 7px 7px #e85d3a, 8px 8px #e85d3a,
+    9px 9px #e85d3a;
   border-radius: 10px;
   padding: 10px;
 }
@@ -113,16 +111,20 @@
   position: relative;
   font-family: Fredoka;
   font-size: 50px;
-  color: #000000;
+  color: #ffffff;
+  /* -webkit-text-stroke-color: #3A6EE8;
+  -webkit-text-stroke-width: 1px; */
+  color: #3A6EE8;
+  /* color: #000000; */
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
   padding-bottom: 12px;
   text-align: center;
   margin-bottom: 20px;
-  /* text-shadow: 1px 1px #3A6EE8, 2px 2px #3A6EE8, 3px 3px #3A6EE8,
-    4px 4px #3A6EE8, 5px 5px #3A6EE8, 6px 6px #3A6EE8, 7px 7px #3A6EE8,
-    8px 8px #3A6EE8, 9px 9px #3A6EE8; */
+  /* text-shadow: 1px 1px #e85d3a, 2px 2px #e85d3a, 3px 3px #e85d3a,
+    4px 4px #e85d3a, 5px 5px #e85d3a, 6px 6px #e85d3a, 7px 7px #e85d3a,
+    8px 8px #e85d3a, 9px 9px #e85d3a; */
 }
 .MyTech .title::before {
   content: '';

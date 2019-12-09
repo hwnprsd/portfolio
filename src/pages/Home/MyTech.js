@@ -71,7 +71,7 @@ export default class MyTech extends Component {
         <div className="content">
           {/* The Text */}
           <div className="text-container" style={{backgroundColor: 'white'}}>
-            <div className="title" style={{color: "#000000"}} >My Proficiencies</div>
+            <div className="title"  >My Proficiencies</div>
             <div className="sub-text" style={{color: '#000000'}}>
               I am constantly learning and improving my skills with a multitude
               of technologies, languages, and libraries. From html to
