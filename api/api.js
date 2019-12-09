@@ -1,6 +1,5 @@
 var app = require('express')();
 var server = require('http').Server(app);
-var io = require('socket.io')(server);
 var nodemailer = require('nodemailer');
 var credentials = require('./email-credentials');
 
@@ -30,19 +29,3 @@ var mailOptions = {
 };
 
 // Handling Socket Connections/Requests
-io.on('connection', function(socket) {
-  // Receiving email requests
-  socket.on('email', function(data) {
-    mailOptions.from = '"Fred Foo ?" <' + data.email + '>';
-    mailOptions.text = data.email + '  ' + data.message;
-    mailOptions.html =
-      '<b>From: ' + data.email + '</b><br /><hr><br />' + data.message;
-
-    transporter.sendMail(mailOptions, function(error, info) {
-      if (error) {
-        return console.log(error);
-      }
-      console.log('Message send: ' + info.response);
-    });
-  });
-});

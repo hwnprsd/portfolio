@@ -8,7 +8,7 @@ class HomeFooter extends Component {
         <div className="content">
           <div className="text-container">
             <div>-</div>
-            <div>ashwinxprasad@gmail.com</div>
+            <div>mail@ashwinxprasad.xyz</div>
           </div>
           <div className="line" />
           <div className="link-container">

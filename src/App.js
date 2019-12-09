@@ -3,14 +3,11 @@ import Home from './pages/Home/Home';
 import './styles/global.css';
 import './styles/fonts.css';
 import './styles/font-awesome/css/all.css';
-import io from 'socket.io-client';
 
 class App extends Component {
   constructor(options) {
     super(options);
-    var apiAddress = 'http://localhost:3001';
 
-    this.socket = io.connect(apiAddress);
     this.touchDevice = this.isTouchDevice();
   }
 
