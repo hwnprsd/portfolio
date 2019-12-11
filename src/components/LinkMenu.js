@@ -9,7 +9,6 @@ class LinkMenu extends Component {
   render() {
     return (
       <div className="LinkMenu">
-       
         {/* Links to my different profiles */}
         <div className="link-container">
           {/* Github */}
@@ -21,8 +20,15 @@ class LinkMenu extends Component {
             <i className="fab fa-github" />
             <div className="name">Github</div>
           </a>
+          <a
+            className="link"
+            href="https://github.com/d3fkon"
+            target="_blank"
+          >
+            <i className="fa fa-address-card" aria-hidden="false"></i>
 
-         
+            <div className="name">Download Resume</div>
+          </a>
         </div>
       </div>
     );
@@ -32,19 +38,19 @@ class LinkMenu extends Component {
   hoverLinks() {
     var links = $('.LinkMenu .link');
 
-    setTimeout(function() {
+    setTimeout(function () {
       // Remember each links original width)
       for (var i = 0; i < links.length; i++) {
         var link = links.eq(i);
         link.attr('data-namewidth', link.children('.name').outerWidth());
         link.children('.name').css('width', '0px');
       }
-      $('.LinkMenu .link').on('mouseenter', function(e) {
+      $('.LinkMenu .link').on('mouseenter', function (e) {
         $(this)
           .children('.name')
           .css('width', $(this).attr('data-namewidth'));
       });
-      $('.LinkMenu .link').on('mouseleave', function(e) {
+      $('.LinkMenu .link').on('mouseleave', function (e) {
         $(this)
           .children('.name')
           .css('width', 0);
