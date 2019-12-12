@@ -79,13 +79,13 @@ var projects = [
      I starting interning part-time where, I led the mobile team of two more interns and started porting the 
      web application to mobile.
      <br/><br/>
-     Along with my team, we built a <b>RESTful API</b> service using the Yii PHP framework, and used JWT Token based authentication. I independently developed
+     Along with my team, we built a <b>RESTful API</b> service using the Yii PHP framework, and used <b>JWT</b> Token based authentication. I independently developed
      both the android and iOS applications in flutter, consuming this API service.
      <br/><br/>
-     Proficient in design patterns like Business Logic Components (BLoC) and Provider, I used them successfully to build scalable mobile applications.
+     Proficient in design patterns like Business Logic Components (BLoC) and Provider, I used them successfully to build a scalable mobile application.
       <br/><br/>
-      Since it's deployment in fall 2019, the application has been rolled out to 100% of the staff members in the institiute and is on track to being released
-      to over <b>50000 students</b> across all institutes under acharya institute. 
+      Since it's deployment in fall 2019, the application has been rolled out to 100% of the staff members is on track to being released
+      to over <b>50000 students</b> across all institutes under acharya umbrella. 
     `,
     images: ['/canby-ed-foundation/1.jpg', '/canby-ed-foundation/2.jpg']
   },
@@ -94,7 +94,7 @@ var projects = [
     name: 'Old Dominion University',
     link: '',
     description: `
-      I <b><i>interned as a research assistant</b></i> at Old Dominion University, Virginia during the Summer of 2019, where I worked on the project titled 
+      I <b>interned as a research assistant</b> at Old Dominion University, Virginia during the Summer of 2019, where I worked on the project titled 
       <b>Agression Detection and Intervention in Alzheimer's and Dementia patients</b>.
       <br/><br/>
       Aggression is one of the most significant symptoms of patients suffering from degenrative diseases such as Alzheimer's and Dimentia.

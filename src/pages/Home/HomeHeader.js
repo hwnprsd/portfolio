@@ -40,7 +40,7 @@ class HomeHeader extends Component {
             <div className="text-container">
               <div className="header-text">Hi, I'm Ashwin</div>
               <div className="sub-text">
-                I'm a mobile developer and backend engineer and a Machine Learning enthusiast currently residing in Bangaluru, India.
+                I'm a mobile developer, backend engineer and a machine learning enthusiast currently residing in Bangaluru, India.
                 <br />
                 <br />I create software that helps make life easier for everyone.
               </div>
