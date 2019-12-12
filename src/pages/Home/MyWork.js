@@ -71,7 +71,7 @@ class MyWork extends Component {
 var projects = [
   {
     name: 'Acharya Institutes ERP Mobile App',
-    link: 'https://canbyedfoundation.org/',
+    link: 'https://github.com/d3fkon/acharya-erp-info',
     description: `
      Noticed by my work on the <b>Acharya Habba 2019</b> mobile app, the chair of Acharya Institutes, invited me to join the ERP Team
      of the organization. The ERP team already had a web application in production and was looking forward to port the same on to the mobile plataform.
@@ -92,7 +92,7 @@ var projects = [
   
   {
     name: 'Old Dominion University',
-    link: 'https://github.com/quangogage/Portfolio-App',
+    link: '',
     description: `
       I <b><i>interned as a research assistant</b></i> at Old Dominion University, Virginia during the Summer of 2019, where I worked on the project titled 
       <b>Agression Detection and Intervention in Alzheimer's and Dementia patients</b>.
@@ -113,7 +113,7 @@ var projects = [
   },
   {
     name: 'Habba 2019',
-    link: 'http://gatorstep.quangostaging.com/configurator/',
+    link: 'https://github.com/d3fkon/habba-2019-info',
     description: `
     <b>Acharya Habba</b>, is a national level annual techno-cultural festival held at Acharya Institute, Bangalore.
      This festival typically spans for the better part of March and attracts well over 10000 participants from all 
