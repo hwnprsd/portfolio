@@ -22,12 +22,21 @@ class LinkMenu extends Component {
           </a>
           <a
             className="link"
-            href="https://github.com/d3fkon"
+            href="https://about.ashwinxprasad.xyz/view-resume"
             target="_blank"
           >
-            <i className="fa fa-address-card" aria-hidden="false"></i>
+            <i className="fas fa-id-badge" aria-hidden="false"></i>
 
-            <div className="name">Download Resume</div>
+            <div className="name">Resume</div>
+          </a>
+          <a
+            className="link"
+            href="https://www.linkedin.com/in/ashwin-prasad-a38610197/"
+            target="_blank"
+          >
+            <i className="fab fa-linkedin" aria-hidden="false"></i>
+
+            <div className="name">LinkedIn</div>
           </a>
         </div>
       </div>

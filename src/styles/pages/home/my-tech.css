@@ -71,7 +71,7 @@
 
 .MyTech .tech-list-container {
   position: absolute;
-  left: 54%;
+  left: 58%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
@@ -84,7 +84,11 @@
     9px 9px #e85d3a;
   border-radius: 10px;
   padding: 10px;
+  opacity: 0;
+  transition: 0.4s;
+  transition-delay: 0.7s;
 }
+
 .MyTech .header {
   font-family: Roboto-Mono;
   font-size: 30px;
@@ -189,6 +193,10 @@
   animation-delay: 0.2s;
   animation-duration: 1.2s;
   animation-fill-mode: forwards;
+}
+.MyTech.anim .tech-list-container {
+  opacity: 1;
+  left: 54%;
 }
 
 @keyframes myTechFadeIn {

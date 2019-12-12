@@ -20,7 +20,22 @@ class HomeFooter extends Component {
             >
               <i className="fab fa-github" />
             </a>
+            <a
+            className="link"
+            href="https://about.ashwinxprasad.xyz/view-resume"
+            target="_blank"
+          >
+            <i className="fas fa-id-badge" aria-hidden="false"></i>
 
+          </a>
+          <a
+            className="link"
+            href="https://www.linkedin.com/in/ashwin-prasad-a38610197/"
+            target="_blank"
+          >
+            <i className="fab fa-linkedin" aria-hidden="false"></i>
+
+          </a>
             {/* Stack Overflow */}
           </div>
         </div>

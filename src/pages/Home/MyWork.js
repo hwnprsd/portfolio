@@ -37,7 +37,7 @@ class MyWork extends Component {
         <div className="content">
           <div className="title anim-on-scroll">
             <img className="title-ribbon" src={ribbon} alt="" />
-            <div className="text">My Work:</div>
+            <div className="text">My Work</div>
           </div>
           <div className="project-container">
             {projects.map((project, index) => {
@@ -70,66 +70,74 @@ class MyWork extends Component {
  */
 var projects = [
   {
+    name: 'Acharya Institutes ERP Mobile App',
+    link: 'https://canbyedfoundation.org/',
+    description: `
+     Noticed by my work on the <b>Acharya Habba 2019</b> mobile app, the chair of Acharya Institutes, invited me to join the ERP Team
+     of the organization. The ERP team already had a web application in production and was looking forward to port the same on to the mobile plataform.
+     <br/><br/>
+     I starting interning part-time where, I led the mobile team of two more interns and started porting the 
+     web application to mobile.
+     <br/><br/>
+     Along with my team, we built a <b>RESTful API</b> service using the Yii PHP framework, and used JWT Token based authentication. I independently developed
+     both the android and iOS applications in flutter, consuming this API service.
+     <br/><br/>
+     Proficient in design patterns like Business Logic Components (BLoC) and Provider, I used them successfully to build scalable mobile applications.
+      <br/><br/>
+      Since it's deployment in fall 2019, the application has been rolled out to 100% of the staff members in the institiute and is on track to being released
+      to over <b>50000 students</b> across all institutes under acharya institute. 
+    `,
+    images: ['/canby-ed-foundation/1.jpg', '/canby-ed-foundation/2.jpg']
+  },
+  
+  {
+    name: 'Old Dominion University',
+    link: 'https://github.com/quangogage/Portfolio-App',
+    description: `
+      I <b><i>interned as a research assistant</b></i> at Old Dominion University, Virginia during the Summer of 2019, where I worked on the project titled 
+      <b>Agression Detection and Intervention in Alzheimer's and Dementia patients</b>.
+      <br/><br/>
+      Aggression is one of the most significant symptoms of patients suffering from degenrative diseases such as Alzheimer's and Dimentia.
+      The research involved using data from sensors on smart devices such as Fitbit Versa and Google Pixel, to detect aggression beforehand,
+      preventing harmful causations from this aggression.
+      <br/><br/>
+      Along with my team, I developed a <b>Caregiver Dashboard</b> where, we used motor, vital and the voice data from various sensors/devices
+      to classify whether the patient was under going a aggressive activity or not. We used <b>RNN with NLP</b> to filter out and classify the voice data 
+      coming from the microphone along with a <b>GMM Classifier</b> for classifying the Motor data coming from a 3-axis accelerometer on the Fitbit Versa (Expected 
+      to be worn by the patient) and combined it with the Vital data again coming from the Versa to build a final classification layer. All the data had to be cleaned and processed
+      in real-time due to which we implemented web-sockets for the communication between these devices and the server. 
+      <br/><br/>
+      Our solution to this problem was hailed a success and I also was awarded with the <b>"Outstanding Performer"</b> award among the interns.
+    `,
+    images: ['/portfolio/1.jpg']
+  },
+  {
     name: 'Habba 2019',
     link: 'http://gatorstep.quangostaging.com/configurator/',
     description: `
-      Gatorstep is a quality flooring manufacturer. I was tasked with creating a 
-      3d product viewer, allowing users to see the different color combinations,
-      patterns, textures - All on a 3d boat model.
+    <b>Acharya Habba</b>, is a national level annual techno-cultural festival held at Acharya Institute, Bangalore.
+     This festival typically spans for the better part of March and attracts well over 10000 participants from all 
+     around the state and beyond.
+      <br/> <br/>
+    I had the opportunity to work as an iOS developer in the 2018's iteration of this festival and used <b>react-native</b> 
+    to  develop a performant iOS application. 
     
-      <br /><br />
-
-      This was my first time working with <a href="https://threejs.org/">ThreeJS</a>,
-      and 3d-models on-the-web. Needless to say, it was a very educational experience.
-
-      <br /><br />
-
-      The biggest hurdle in this project was definitely prepping the 3d-models in a
-      way that would work well with ThreeJS. There was a lot of trial and error,
-      testing, and breaking everything - But eventually I found a reliable pipeline.
+      <br/> <br/>
+    Impressed by this, the Director of my institute, Vishesh Chandrashekar, appointed me as an intern during my
+     winter break to lead the team of 8 outstanding developers to create an android, iOS and a web application.
+    
+      <br/> <br/>
+    Along with my skillful team, I lead the way to develop an exhaustive API service using express js and MySQL
+     (deployed on the <b>Amazon AWS EC2 and RDS</b> instances, coupled with NGINX) and also individually developed the android and iOS application using <b>Flutter</b>, where I used the Provider dataflow pattern along with Rx Streams for state management. 
+    
+      <br/> <br/>
+    As a team, we adpoted Agile practices, and employed 1 week sprints due to the tight timeline.
+     This was a great opportunity for me to work as a team and work against deadlines. The apps were hailed a huge success,
+      and all the developers took away a lot of experiece from this.
       
     `,
     images: ['/gatorstep/1.jpg']
     // 0831 2498131
-  },
-  {
-    name: 'Acharya Institutes ERP Mobile App',
-    link: 'https://canbyedfoundation.org/',
-    description: `
-      While at Acharya Institutes, during my junior year of Engineering,
-      the Chairman of the Institute approched me to build a mobile application for the
-      already existing ERP system, which was on the web.
-
-      <br /><br />
-
-      I started interning and started leading this mobile application venture along with a team of backend engineers.
-      I used Flutter to develop a cross platform application, which is now used by the entire organization of 2500+ staff and 50000+ students
-      This was the first time working on an application of this scale, and I thoroughly enjoyed
-    `,
-    images: ['/canby-ed-foundation/1.jpg', '/canby-ed-foundation/2.jpg']
-  },
-  {
-    name: 'My Portfolio',
-    link: 'https://github.com/quangogage/Portfolio-App',
-    description: `
-      Yes! I am talking about this site. Working on it has been a ton of fun
-      and I've learned a lot. Most of my time working on this site has been
-      spent designing and making sure everything feels right.
-
-      <br /><br />
-
-      This site is a React app - I decided to use React because I knew I wanted
-      it to have that single-page-application feel - And it is a technology that
-      I am constantly trying to improve with.
-
-      <br /><br />
-      
-      Overall the biggest takeaway from my time spent working on this site has to be
-      my newfound backend knowledge. I set up this static site to be served with
-      NGINX, and the API used to send emails from the contact form is being ran by
-      Docker.
-    `,
-    images: ['/portfolio/1.jpg']
   }
 ];
 
