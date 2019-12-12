@@ -4,7 +4,7 @@
       name      : "your-app",
       script    : "npx",
       interpreter: "none",  
-      args: "serve -p 8443 -T"
+      args: "serve -p 3000 -T"
     }
   ]
 }
