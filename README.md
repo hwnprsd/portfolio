@@ -1,25 +1,18 @@
 # Portfolio App
-This is my portfolio website. It is a fairly simple one page react-app that showcases my skills, my work, and let's users contact me!
-
-It is hosted on digital ocean - The static webpage is served by NGINX, and the API is ran by Docker.
-
-![Screenshot of Site](https://github.com/quangogage/Portfolio-App/blob/master/screenshots/1.png?raw=true)
+This is my portfolio app, inspired by fellow GitHub user Gage. His repository was in a pretty bad shape when I came across it. I hence decided to make a copy and modify it instead of forking it. However, feel free to fork this and use to your benefit.
+The app is hosted on [ashwinxprasad.xyz](https://ashwinxprasad.xyz) 
+I used `gh-pages` to deploy the app into this repository's `gh-pages` branch
 
 ## Setup
-1. Install Dependencies:  `npm install`
-2. Create email credentials:  
-    - Create the file `/api/email-credentials.js`
-    - Write inside the file `module.exports = {EMAIL: 'email@address.com',PASS: 'password'}`
+
+- Install Dependencies:  `npm install`
 
 ## Develop
+
 * Run local server - `npm start`
-
-* Run local API - `node index.js`
-
-*Note: You may need to change the API address in `/src/App.js`*
 
 
 ## Deploy
-* Deploy both the API *and* the React App: `./ops ship`
-* Deploy *only* the React App: `./ops ship site`
-* Deploy *only* the API: `./ops ship api`
+
+* Change the `package.json` to meet your needs. Be sure to change `homepage:` to reflect your custom domain
+* Deploy *only* the React App: `npm run deploy`

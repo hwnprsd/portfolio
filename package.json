@@ -2,12 +2,12 @@
   "name": "portfolio-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://localhost:3000/",
+  "homepage": "https://ashwinxprasad.xyz",
   "dependencies": {
     "body-parser": "^1.18.3",
     "concurrently": "^4.0.1",
     "express": "^4.16.3",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.1",
     "morgan": "^1.9.1",
     "nodemailer": "^4.6.8",
     "parallax-js": "^3.1.0",
@@ -20,7 +20,7 @@
     "vis": "^4.21.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp CNAME build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
